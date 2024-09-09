@@ -1,0 +1,399 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #000000, #050b5d); /* Gradient from deep blue to electric blue */
+    background-size: cover; /* Ensure the background covers the whole viewport */
+    min-height: 100vh; /* Ensure the body takes up at least the full height of the viewport */
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* Header Styles */
+header {
+    background-size: cover; /* Cover the entire header area */
+    color: #fff;
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+    height: 400px; /* Adjust the height as needed */
+}
+
+.header-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+.logo {
+    max-width: 150px; /* Adjust the size as needed */
+    margin: 0; /* Remove margin for precise positioning */
+}
+
+.header-text {
+    text-align: center;
+    margin-top: 30px;
+    flex: 1;
+}
+
+header h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-button {
+    background: #051a83; /* Accent color */
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 20px;
+    font-size: 1.5em;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.cta-button:hover {
+    background: #2d30d7; /* Slightly darker shade for hover effect */
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 40px 20px;
+        height: auto;
+    }
+
+    .header-text {
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
+
+main {
+    padding: 40px 20px;
+}
+
+.introduction {
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent white background */
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+    margin: 10px auto;
+    max-width: 800px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    color: #fff;
+}
+
+.introduction h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #ffffff; /* Accent color */
+    margin-bottom: 20px;
+}
+
+.intro-content {
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+.intro-content p {
+    margin-bottom: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.highlight {
+    font-weight: 600;
+    color: rgb(199, 209, 247); /* Another accent color */
+}
+
+@media (max-width: 768px) {
+    .introduction {
+        padding: 20px 10px;
+    }
+
+    .introduction h2 {
+        font-size: 2em;
+    }
+
+    .intro-content {
+        font-size: 1.1em;
+    }
+}
+
+.portfolio-section {
+    margin-top: 100px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.portfolio-item {
+    background-color: rgb(19, 19, 50);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 25px;
+    width: 100%;
+    max-width: 672px;
+    margin: 20px;
+    text-align: center;
+    backdrop-filter: blur(12px) saturate(180%);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-item img:hover {
+    opacity: 0.9;
+}
+
+.portfolio-item p {
+    font-size: 1.15em;
+    line-height: 1.6em;
+    margin-bottom: 30px;
+    color: #f0f0f0;
+}
+
+.portfolio-item strong {
+    font-size: x-large;
+    color: rgb(199, 209, 247);
+}
+
+.portfolio-item ul {
+    text-align: left;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    list-style: none;
+    padding-left: 0;
+    color: #ddd;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2em;
+    font-weight: normal;
+    line-height: 1.8em;
+}
+
+.portfolio-item ul li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+.portfolio-item ul li::before {
+    content: '✔';
+    color: rgb(7, 161, 20);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.3em;
+}
+
+.choose-color {
+    background: linear-gradient(135deg, #1e20a9, rgb(8, 93, 154));
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: background 0.4s ease, transform 0.4s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: auto;
+}
+
+.choose-color:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #15167e, rgb(6, 70, 118));
+}
+
+.live-preview {
+    background: #051a83;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: background 0.4s ease, transform 0.4s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: auto;
+}
+
+.live-preview:hover {
+    transform: scale(1.05);
+    background: #2d30d7;
+}
+
+/* Footer */
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    backdrop-filter: blur(10px);
+}
+
+footer a {
+    color: #4a90e2;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .portfolio-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 20px 10px;
+    }
+}
+
+/* Contact Page Specific Styles */
+/* Contact Page Specific Styles */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    min-height: 100vh; /* Full viewport height to center vertically */
+    padding: 50px 20px;
+}
+
+.contact-container h1 {
+    font-size: 3em;
+    color: #fff;
+    text-align: center; /* Center title horizontally */
+    margin-bottom: 40px;
+}
+
+/* Box styles for contact info */
+.contact-info {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    flex-wrap: wrap;
+    gap: 30px; /* Add space between boxes */
+}
+
+.contact-info div {
+    flex: 1 1 300px; /* Ensure boxes take full width on small screens */
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(19, 19, 50, 0.8); /* Background with transparency */
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.contact-info div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); /* Shadow on hover */
+}
+
+.contact-info h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #f0f0f0;
+}
+
+.contact-info p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.contact-info a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column; /* Stack boxes vertically on smaller screens */
+    }
+
+    .contact-container h1 {
+        font-size: 2.2em; /* Slightly smaller heading for mobile */
+    }
+
+    .contact-info div {
+        flex: 1 1 100%; /* Full width for boxes on small screens */
+    }
+}
